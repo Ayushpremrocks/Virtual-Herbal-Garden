@@ -1,4 +1,3 @@
-// GSAP animation for the home page
 gsap.from("#main-heading", { 
     duration: 1.5, 
     y: -50, 
@@ -14,11 +13,9 @@ gsap.from("#enter-button", {
     ease: "power2.out" 
 });
 
-// GSAP Exit animation when the button is clicked
 document.getElementById("enter-button").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevents the default link behavior for now
-
-    // Exit animation before navigating to the plants page
+    event.preventDefault();
+    
     gsap.to("#main-heading", {
         duration: 1, 
         y: -100, 
@@ -32,7 +29,6 @@ document.getElementById("enter-button").addEventListener("click", function(event
         opacity: 0, 
         ease: "power2.in", 
         onComplete: function() {
-            // Navigate to the second page after animation completes
             window.location.href = "plants.html";
         }
     });
