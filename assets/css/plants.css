@@ -1,0 +1,313 @@
+:root {
+    --primary-color: #4CAF50;
+    --hover-color: #388e3c;
+    --white: #ffffff;
+    --dark: #333;
+    --light-bg: #e9e6df;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.4);
+    --gradient-primary: linear-gradient(135deg, #4CAF50, #81C784);
+    --gradient-hover: linear-gradient(135deg, #388e3c, #66BB6A);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--white);
+    background: url('/assets/images/flowers\ 1.webp') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px var(--shadow-dark);
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1.2;
+    color: #f5f5f5;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.intro-slide {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-slide h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-slide p {
+    font-size: 2.2rem;
+    max-width: 900px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #f8f8f8;
+}
+
+#plants-section {
+    padding: 80px 40px;
+    background: var(--light-bg);
+    text-align: center;
+    color: var(--dark);
+}
+
+#plants-section h2 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+}
+
+.plant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 16px var(--shadow-light);
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
+}
+
+.plant-card:hover {
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 12px 24px var(--shadow-dark);
+}
+
+.plant-img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    object-fit: cover;
+    border-bottom: 4px solid var(--primary-color);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.plant-img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.plant-card p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: var(--dark);
+}
+
+.plant-button {
+    padding: 14px 28px;
+    margin: 20px 0;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.plant-button:hover {
+    background: var(--gradient-hover);
+    box-shadow: 0 6px 18px var(--shadow-dark);
+}
+
+.plant-page {
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.plant-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+h2 {
+    margin-top: 0.25rem;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.scientific-name {
+    margin: 5px 0 10px 0;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px var(--shadow-dark);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px var(--shadow-dark);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro-slide h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-slide p {
+        font-size: 1.5rem;
+    }
+
+    #plants-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .plant-img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-slide h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-slide p {
+        font-size: 1rem;
+    }
+
+    #plants-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .plant-img {
+        max-width: 220px;
+    }
+
+    .plant-button {
+        padding: 12px 22px;
+    }
+}
+
+#aloe-vera-card {
+    background-color: #B2E3D2;
+}
+
+#turmeric-card {
+    background-color: #B2DFDB;
+}
+
+#ginger-card {
+    background-color: #D9EAD3;
+}
+
+#ashwagandha-card {
+    background-color: #FFE5B4;
+}
+
+#neem-card {
+    background-color: #FFFACD;
+}
+
+#tulsi-card {
+    background-color: #E1F5FE;
+}
+
+#cardamom-card {
+    background-color: #B2E3D2;
+}
+
+#peppermint-card {
+    background-color: #B2DFDB;
+}
+
+#fennel-card {
+    background-color: #FFE5B4;
+}
+
+#amla-card {
+    background-color: #FFFACD;
+}
+
+#moringa-card {
+    background-color: #B2DFDB;
+}
+
+#ginseng-card {
+    background-color: #E1F5FE;
+}
+
+#licorice-card {
+    background-color: #B2E3D2;
+}
+
+#mustard-card {
+    background-color: #B2DFDB;
+}
+
+#bhringraj-card {
+    background-color: #FFE5B4;
+}
+
+#shatavari-card {
+    background-color: #FFFACD;
+}
+
+#brahmi-card {
+    background-color: #B2E3D2;
+}
+
+#punarnava-card {
+    background-color: #E1F5FE;
+}
+
+#karela-card {
+    background-color: #B2DFDB;
+}
