@@ -42,7 +42,37 @@ The project is divided into well-organized folders for maintainability and scala
   └── README.md
 ```
 ---
+## 📖 Project Overview  
 
+The **Virtual Herbal Garden** is designed to educate and inspire users about the benefits and cultural significance of medicinal plants. It features:  
+
+- A visually appealing **landing page** introducing users to the project.  
+- A detailed **catalog** of medicinal plants, complete with scientific names and high-quality images.  
+- **Individual plant pages** showcasing medicinal uses, cultural relevance, and growth habits.  
+
+The project is ideal for anyone interested in herbal medicine, biodiversity, or sustainable gardening.  
+
+---
+
+## 🛠️ Tech Stack  
+
+The **Virtual Herbal Garden** project uses a modern and efficient tech stack to create a visually appealing, responsive, and interactive web experience:  
+
+#### **Frontend**  
+- **HTML5**: Structure of web pages.  
+- **CSS3**: Styling, layouts, and responsive design.  
+- **JavaScript (Vanilla JS)**: Interactivity and animations.  
+
+#### **Animation Library**  
+- **[GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)**: Smooth and professional-grade animations for transitions and effects.  
+
+#### **Design Assets**  
+- **Images**: High-quality visuals for plants and backgrounds stored in the `assets/images` folder.  
+
+#### **Development Tools**  
+- **Code Editor**: Visual Studio Code (or any preferred editor).  
+- **Version Control**: Git and GitHub for code management and collaboration.  
+---
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
