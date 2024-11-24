@@ -2,6 +2,14 @@
 
 A web-based project that provides an immersive experience to explore the beauty and benefits of medicinal plants. The Virtual Herbal Garden enables users to navigate through an interactive interface, view detailed plant information, and learn about their medicinal and cultural significance.
 
+![Screenshot of the model](assets/images/Index-Page.png)
+
+![Screenshot of the model](assets/images/Second-Page.png)
+
+![Screenshot of the model](assets/images/Plants-Page.png)
+
+![Screenshot of the model](assets/images/Plants-Details.png)
+
 ---
 
 ## 📌 Features
